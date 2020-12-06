@@ -1,0 +1,41 @@
+{
+  "actions": [
+    {
+      "name": "ADD_CNT",
+      "describe": "add count",
+      "show":[
+        {
+          "CName": "showCount"
+        }
+      ],
+      "operation":[
+        {
+          "CName": "addCnt"
+        }
+      ]
+    },
+    {
+      "name": "DELETE_CNT",
+      "describe": "reduce count",
+      "show": [
+        {
+          "CName": "showCnt"
+        }
+      ],
+      "operation": [
+        {
+          "CName": "deleteCnt"
+        }
+      ]
+    },
+    {
+      "name": "SHOW_FREQ",
+      "describe": "Count flow during designated period",
+      "show": [
+        {
+          "CName": "showFreq"
+        }
+      ]
+    }
+  ]
+}

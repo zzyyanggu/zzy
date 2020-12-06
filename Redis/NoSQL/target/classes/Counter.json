@@ -1,0 +1,27 @@
+{
+  "counters": [
+    {
+      "name": "addCnt",
+      "type": "num",
+      "key": "Cnt",
+      "value": "1"
+    },
+    {
+      "name": "deleteCnt",
+      "type": "num",
+      "key": "Cnt",
+      "value": "1"
+    },
+    {
+      "name": "showCnt",
+      "type": "num",
+      "key": "Cnt"
+    },
+    {
+      "name": "showFreq",
+      "type": "freq",
+      "key": "Cnt",
+      "field": "202012012310 202012182310"
+    }
+  ]
+}
