@@ -102,9 +102,9 @@ public class JedisTest {
     public void AddCnt(String value){
         //Get current time
         Date date = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyymmddhhmm");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmm");
         String enterTime = dateFormat.format(date);
-        SimpleDateFormat argformat = new SimpleDateFormat("hhmmss");
+        SimpleDateFormat argformat = new SimpleDateFormat("HHmmss");
         String arg = argformat.format(date);
         int enterarg = Integer.parseInt(arg);
         //Get the added amount
@@ -130,9 +130,9 @@ public class JedisTest {
     public void DeleteCnt(String value){
         //Get current time
         Date date = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyymmddhhmm");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmm");
         String leaveTime = dateFormat.format(date);
-        SimpleDateFormat argformat = new SimpleDateFormat("hhmmss");
+        SimpleDateFormat argformat = new SimpleDateFormat("HHmmss");
         String arg = argformat.format(date);
         int leavearg = Integer.parseInt(arg);
         //Get the reduced amount
@@ -166,6 +166,8 @@ public class JedisTest {
                 elem = Long.valueOf(enter.get(i));
                 if(elem >= enter1 && elem <= enter2){
                     entertotal++;
+//                    System.out.println(elem);
+//                    System.out.println(entertotal);
                 }
             }
             System.out.println("Number of addition during the period " + stime + ":" + entertotal);
@@ -181,9 +183,11 @@ public class JedisTest {
                 elem = Long.valueOf(leave.get(i));
                 if(elem >= leave1 && elem <= leave2){
                     leavetotal++;
+//                    System.out.println(elem);
+//                    System.out.println(leavetotal);
                 }
             }
-            System.out.println("Number of reduction during the period" + stime + ":" + leavetotal);
+            System.out.println("Number of reduction during the period " + stime + ":" + leavetotal);
         }
         else{
             System.out.println("So far it has not left");
